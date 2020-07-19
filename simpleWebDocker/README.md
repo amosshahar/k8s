@@ -48,4 +48,7 @@ kubectl apply -f k8sFiles/serviceLoadBalancer
 kubectl get service
 http://<loadbalncer-EXTERNAL-IP>:80
 
+# delete the cluster
+ gcloud container clusters delete my-k8s-cluster
+
 
