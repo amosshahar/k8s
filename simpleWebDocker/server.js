@@ -6,10 +6,7 @@ var express = require('express'),
 app.set('views', 'views');
 app.set('view engine', 'pug');
 
-app.get('/', function(req, res) {
-    res.render('home.pug', {
-  });
-});
-
-app.listen(8080);
+app.get('/', (req, res) => res.send('Hello K8s!'))
+let port = 8080
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 module.exports.getApp = app;
